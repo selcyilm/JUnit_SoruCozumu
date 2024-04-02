@@ -26,6 +26,15 @@ public class ReusableMethods {
 		return (dondurulenListe);
 	}
 
+	public static List<String> webElementTostringList(List<WebElement> webElementList) {
+		List<String> dondurulenListe = new ArrayList<>();
+
+		for (WebElement each : webElementList) {
+			dondurulenListe.add(each.getText());
+		}
+		return (dondurulenListe);
+	}
+
 	public static void dropDownYazdırma(List<WebElement> webElementList) {
 		int i = 0;
 
